@@ -27,11 +27,11 @@ ext {
 
 android {
     namespace 'com.github.barteksc.pdfviewer'
-    compileSdkVersion 36
+    compileSdkVersion 35
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 36
+        targetSdkVersion 35
     }
 
     compileOptions {
@@ -65,12 +65,12 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core:1.17.0'
+    implementation 'androidx.core:core:1.13.0'
     api 'io.github.oothp:pdfium-android:1.9.5-beta01'
 }
 
 // Configure Maven publishing for JitPack
-group = project.findProperty("group") ?: "com.github.xposed73"
+group = project.findProperty("group") ?: "com.github.pipixia122"
 version = project.findProperty("version") ?: "1.0.0"
 
 // sources jar is produced via android.publishing.singleVariant.withSourcesJar()
@@ -93,7 +93,7 @@ afterEvaluate {
                         }
                     }
                     scm {
-                        url = "https://github.com/xposed73/AndroidPdfViewer"
+                        url = "https://github.com/pipixia122/AndroidPdfViewer"
                     }
                 }
             }
